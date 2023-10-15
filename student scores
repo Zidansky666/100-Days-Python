@@ -1,0 +1,17 @@
+# Input a list of student scores
+student_scores = input().split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+
+# Write your code below this row 👇
+max = student_scores[0]
+min = student_scores[0]
+
+for height in student_scores:
+    if height < min:
+        min = height
+    elif height > max:
+         max = height
+      
+
+print (f'The highest score in the class is: {max}')

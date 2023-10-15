@@ -1,0 +1,17 @@
+def yes():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def jump():
+    move()
+    turn_left()
+    move()
+    yes()
+    move()
+    yes()
+    move()
+    turn_left()
+
+for i in range (6):
+    jump()
